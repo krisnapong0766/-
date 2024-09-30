@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เขาหล่น</title>
+    <style>
+        body {
+    background-color: #FAF3E0;
+    /* หรือใช้ #FFFDD0 */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Angsana New;
+}
+
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            background: none;
+            border-radius: 0;
+        }
+
+        .main-content {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	font-size: 24px;
+        }
+
+        .right-content {
+            margin-left: 20px;
+        }
+
+        .header-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 10px;
+            padding-right: 20px;
+        }
+
+        .header-right img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .header-right a {
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .header-right a:hover {
+            color: #007BFF;
+        }
+
+        .calendar {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+            background-color: #f4f4f4;
+            border: 1px solid #dcdcdc;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .month {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border-radius: 8px 8px 0 0;
+            font-size: 14px;
+        }
+
+        .month ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .month ul li {
+            display: inline-block;
+            padding: 0 5px;
+        }
+
+        .month .prev,
+        .month .next {
+            cursor: pointer;
+        }
+
+        .weekdays {
+            margin: 0;
+            padding: 8px 0;
+            background-color: #ddd;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            font-size: 12px;
+        }
+
+        .weekdays li {
+            display: inline-block;
+            width: 13.6%;
+            color: #666;
+        }
+
+        .days {
+            margin: 0;
+            padding: 5px 0;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .days li {
+            list-style-type: none;
+            display: inline-block;
+            width: 13.6%;
+            padding: 5px;
+            margin-bottom: 5px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        .days li:hover {
+            background-color: #ddd;
+            cursor: pointer;
+        }
+
+        .days li.active {
+            background-color: #333;
+            color: white;
+            border-radius: 50%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<p>&nbsp;</p>
+<table width="1328" border="0" align="center">
+        <tr>
+            <td width="1322" height="578" colspan="3" valign="top"><img src="img/Welcome.gif" width="1325" height="576" alt=""/></td>
+        </tr>
+  <tr>
+            <td colspan="3">
+                <table width="1319" border="0" align="center">
+                    <tr>
+                        <td width="251"><a href="index.html"><img src="img/หน้าแรก.gif" width="250" height="135" alt=""/></a></td>
+                        <td width="265" align="center"><a href="2.html"><img src="img/ประวัติความเป็นมา.gif" width="250" height="135" alt=""/></a></td>
+                        <td width="271" align="center"><a href="3.html"><img src="img/สถานที่ท่องเที่ยว.gif" width="250" height="135" alt=""/></a></td>
+                        <td width="259"><a href="4.html"><img src="img/ร้านอาหาร.gif" width="250" height="135" alt=""/></a></td>
+                        <td width="251"><a href="https://www.rmutp.ac.th/"><img src="img/ปุ่มมทร.gif" width="250" height="135" alt=""/></a></td>
+                    </tr>
+                </table>
+            </td>
+    </tr>
+        <tr>
+            <td colspan="3" align="center" valign="top">
+              <div class="main-content">
+                    <div class="left-content">
+                      <p>&nbsp;</p>
+                      <table width="1210" border="0">
+                        <tbody>
+                          <tr>
+                            <td width="1204" align="center"><img src="img/ร้านเต็ม10.jpg" width="1200" height="800" alt=""/></td>
+                          </tr>
+                          <tr>
+                            <td height="56" style="font-size: 24px"><p><strong>ร้านอาหารเต็มสิบ</strong> อาหารรสเด็ดจัดจ้าน บรรยากาศดี ธรรมชาติสวย ด้านในร้านมีการตกแต่ง สไตล์โมเดิร์น ที่มีความผสมผสานกับบ้านสวน ที่สามารถมองเห็น จุดชมวิวธรรมชาติทั้งสระน้ำภูเขาและทุ่งนาที่งดงามค่ะ ภายในร้านจะแบ่งออกเป็น 3 ส่วนด้วยกันค่ะ คือ ห้องแอร์ด้านล่างมีโต๊ะพลูบริการ , ห้องแอร์บริเวณดาดฟ้า , พื้นที่ธรรมชาติใต้ต้นไม้ชั้นลอยและริมสระน้ำ ที่ร้านมีอาหารทั้งแบบไทย อีสาน และอาหารใต้ ให้เลือกสั่งหลากหลายเมนู แต่ที่จะพลาดไม่ได้เลยที่จะสั่งก็คือ ขาหมู ใบเหลียงผัดไข่ ส้มตำและยำต่างๆ มานั่งทานอาหารอร่อย ๆ พร้อมฟังดนตรีเพลิน ๆ</p></td>
+                          </tr>
+                          <tr>
+                            <td align="center"><img src="img/ร้านเต็ม10-1jpg.jpg" width="1200" height="800" alt=""/></td>
+                          </tr>
+                          <tr>
+                            <td align="center"><img src="img/ร้านเต็ม10-2.jpg" width="1200" height="800" alt=""/></td>
+                          </tr>
+                          <tr>
+                            <td align="left"><p dir="ltr">ที่ตั้ง : 189 ตำบล ป่าขะ ตำบล บ้านนา นครนายก 26110<br>
+                              เปิดบริการ : 11.00-22.00 น. ปิดทุกวันอังคาร<br>
+                              โทรศัพท์ : 095 254 3438<br>
+                              Facebook : <a href="https://www.facebook.com/Temsibbaanna?mibextid=LQQJ4d">https://www.facebook.com/Temsibbaanna?mibextid=LQQJ4d</a><br>
+                            พิกัด GPS : <a href="https://maps.app.goo.gl/2WGCTniTvUgU1n3i8">https://maps.app.goo.gl/2WGCTniTvUgU1n3i8</a></p></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p>&nbsp;</p>
+                      <p>&nbsp;</p>
+                    </div>
+                    <div class="right-content"></div>
+            </div></td>
+        </tr>
+    </table>
+
+<footer>
+  <p>กฤษณพงศ์ พูลสง่า เลขที่21</p>
+</footer>
+</body>
+</html>

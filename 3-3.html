@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>น้ำตกนางรอง</title>
+    <style>
+        body {
+    background-color: #FAF3E0;
+    /* หรือใช้ #FFFDD0 */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Angsana New;
+}
+
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            background: none;
+            border-radius: 0;
+        }
+
+        .main-content {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	font-size: 24px;
+        }
+
+        .right-content {
+            margin-left: 20px;
+        }
+
+        .header-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 10px;
+            padding-right: 20px;
+        }
+
+        .header-right img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .header-right a {
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .header-right a:hover {
+            color: #007BFF;
+        }
+
+        .calendar {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+            background-color: #f4f4f4;
+            border: 1px solid #dcdcdc;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .month {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border-radius: 8px 8px 0 0;
+            font-size: 14px;
+        }
+
+        .month ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .month ul li {
+            display: inline-block;
+            padding: 0 5px;
+        }
+
+        .month .prev,
+        .month .next {
+            cursor: pointer;
+        }
+
+        .weekdays {
+            margin: 0;
+            padding: 8px 0;
+            background-color: #ddd;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            font-size: 12px;
+        }
+
+        .weekdays li {
+            display: inline-block;
+            width: 13.6%;
+            color: #666;
+        }
+
+        .days {
+            margin: 0;
+            padding: 5px 0;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .days li {
+            list-style-type: none;
+            display: inline-block;
+            width: 13.6%;
+            padding: 5px;
+            margin-bottom: 5px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        .days li:hover {
+            background-color: #ddd;
+            cursor: pointer;
+        }
+
+        .days li.active {
+            background-color: #333;
+            color: white;
+            border-radius: 50%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<table width="1328" border="0" align="center">
+        <tr>
+            <td width="1322" height="578" colspan="3" valign="top"><img src="img/Welcome.gif" width="1325" height="576" alt=""/></td>
+        </tr>
+  <tr>
+            <td colspan="3">
+                <table width="1319" border="0" align="center">
+                    <tr>
+                        <td width="251"><a href="index.html"><img src="img/หน้าแรก.gif" width="250" height="135" alt=""/></a></td>
+                        <td width="265" align="center"><a href="2.html"><img src="img/ประวัติความเป็นมา.gif" width="250" height="135" alt=""/></a></td>
+                        <td width="271" align="center"><a href="3.html"><img src="img/สถานที่ท่องเที่ยว.gif" width="250" height="135" alt=""/></a></td>
+                        <td width="259"><a href="4.html"><img src="img/ร้านอาหาร.gif" width="250" height="135" alt=""/></a></td>
+                        <td width="251"><a href="https://www.rmutp.ac.th/"><img src="img/ปุ่มมทร.gif" width="250" height="135" alt=""/></a></td>
+                    </tr>
+                </table>
+            </td>
+    </tr>
+        <tr>
+            <td colspan="3" align="center" valign="top">
+              <div class="main-content">
+                    <div class="left-content">
+                      <p>&nbsp;</p>
+                      <table width="1210" border="0">
+                        <tbody>
+                          <tr>
+                            <td width="1204" align="center"><img src="img/น้ำตกนางรอง1.jpg" width="848" height="477" alt=""/></td>
+                          </tr>
+                          <tr>
+                            <td height="56" style="font-size: 24px"><p> น้ำตกนางรอง ตั้งอยู่ใน เขตอุทยานแห่งชาติเขาใหญ่ ตำบลหินตั้ง ห่างจากตัวเมืองนครนายก 20 กิโลเมตร เป็นน้ำตกขนาดกลางที่ไหลลดหลั่นลงมาเป็นชั้นๆ มีความสูงไม่มากนัก แต่ความสวยงามจากธรรมชาตินั้น ไม่ธรรมดาเลย โดยเฉพาะในช่วงฤดูฝนที่จะมีน้ำเยอะมากๆ และจะไหลเชี่ยว ต้องเพิ่มความระมัดระวังในการลงเล่นน้ำด้วย ที่นี่เป็นน้ำตกอีกแห่งหนึ่ง ที่สามารถมาเที่ยวได้ทุกฤดูกาลเลย เพราะมีน้ำให้เล่นกันตลอดทั้งปีเลย แต่ช่วงเวลาที่ดีที่สุด จะเป็นช่วงปลายฝนต้นหนาว เพราะจะสามารถเห็นสายหมอกไปพร้อมๆ กับน้ำตกที่สวยงามด้วย เป็นภาพที่หาได้ยากมากๆ และยังเป็นแหล่งออกซิเจนบริสุทธิ์ชั้นดีในวันหยุด ที่ใกล้กรุงเทพฯ</p></td>
+                          </tr>
+                          <tr>
+                            <td align="center"><img src="img/น้ำตกนางรอง2.jpg" width="848" height="477" alt=""/></td>
+                          </tr>
+                          <tr>
+                            <td align="left"><p>บริเวณรอบๆ ของ น้ำตกนางรอง จะร่มรื่นมากๆ  และมีซุ้มม้านั่งต่างๆ ไว้สำหรับนั่งพักผ่อนหย่อนใจให้กับนักท่องเที่ยวอีกด้วย ถ้าใครที่มาแล้วไม่ได้เล่นน้ำตก ก็สามารถมานั่งปิกนิกปูเสื่อพักผ่อนนอนเล่นได้เลย ส่วนอาหารนั้น สามารถหาซื้อได้จากด้านหน้าทางเข้าเลย เพราะจะมีร้านค้าเรียงรายอยู่เยอะแยะเลย นอกจากนี้ก็ยังมีบ้านพักรับรองให้บริการด้วย หน้าฝนแบบนี้ คงไม่มีอะไรจะดีไปกว่าการได้เล่นน้ำตกเย็นๆ อีกแล้ว น้ำตกนางรอง แห่งนี้ เที่ยวง่ายๆ ไปเช้าเย็นกลับ ที่สำคัญได้ความสดชื่น อากาศบริสุทธิ์ กลับไปอีกด้วย สำหรับค่าเข้าชมนั้น จะเสียแค่ค่าผ่านประตู รถยนต์พร้อมคนขับ 50 บาท ผู้ใหญ่ 10 บาท เด็กที่สูงไม่เกิน 120 เซนติเมตร เข้าฟรี ไว้เป็นค่าบำรุงรักษาน้ำตกสวยๆ แบบนี้ให้อยู่ไปนานๆ และอย่าลืมช่วยกันรักษาความสะอาดด้วยนะคะ</p></td>
+                          </tr>
+                          <tr>
+                            <td align="center"><img src="img/น้ำตกนางรอง3.jpg" width="848" height="477" alt=""/></td>
+                          </tr>
+                          <tr>
+                            <td align="left"><ul>
+                              <li>ที่อยู่ : น้ำตกนางรอง ตำบลหินตั้ง อำเภอเมืองนครนายก จังหวัดนครนายก</li>
+                              <li>พิกัด : <a href="https://goo.gl/maps/nQqF22VCd8JtQnyh7" target="_blank" rel="noopener">https://goo.gl/maps/nQqF22VCd8JtQnyh7</a> </li>
+                              <li>เปิดให้เข้าชม : 06.00-18.00 น.</li>
+                              <li>โทร : 0-3738-5310 , 0-3730-7100</li>
+                            </ul>                              <p>&nbsp;</p></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p>&nbsp;</p>
+                      <p>&nbsp;</p>
+                    </div>
+                    <div class="right-content"></div>
+            </div></td>
+        </tr>
+    </table>
+
+<footer>
+  <p>กฤษณพงศ์ พูลสง่า เลขที่21</p>
+</footer>
+
+    <script>
+        let today = new Date();
+        let currentMonth = today.getMonth();
+        let currentYear = today.getFullYear();
+        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        function showCalendar(month, year) {
+            let firstDay = (new Date(year, month)).getDay() - 1;
+            let daysInMonth = 32 - new Date(year, month, 32).getDate();
+            let days = document.getElementById("days");
+            let monthYear = document.getElementById("month-year");
+
+            days.innerHTML = "";
+            monthYear.innerHTML = monthNames[month] + " " + year;
+
+            for (let i = 0; i < firstDay; i++) {
+                days.innerHTML += "<li></li>";
+            }
+
+            for (let i = 1; i <= daysInMonth; i++) {
+                if (i === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
+                    days.innerHTML += `<li class='active'>${i}</li>`;
+                } else {
+                    days.innerHTML += `<li>${i}</li>`;
+                }
+            }
+        }
+
+        function changeMonth(delta) {
+            currentMonth += delta;
+            if (currentMonth < 0) {
+                currentMonth = 11;
+                currentYear--;
+            } else if (currentMonth > 11) {
+                currentMonth = 0;
+                currentYear++;
+            }
+            showCalendar(currentMonth, currentYear);
+        }
+
+        showCalendar(currentMonth, currentYear);
+
+        function updateVisitorCount() {
+            let count = localStorage.getItem('visitor-count');
+            if (!count) {
+                count = 0;
+            }
+            count = parseInt(count) + 1;
+            localStorage.setItem('visitor-count', count);
+            document.getElementById('visitor-count').textContent = count;
+        }
+
+        updateVisitorCount();
+
+        function toggleCalendar() {
+            const calendarContainer = document.getElementById('calendar-container');
+            if (calendarContainer.style.display === 'none') {
+                calendarContainer.style.display = 'block';
+            } else {
+                calendarContainer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

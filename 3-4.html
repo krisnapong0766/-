@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>น้ำตกสาริกา</title>
+    <style>
+        body {
+    background-color: #FAF3E0;
+    /* หรือใช้ #FFFDD0 */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Angsana New;
+}
+
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            background: none;
+            border-radius: 0;
+        }
+
+        .main-content {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	font-size: 24px;
+        }
+
+        .right-content {
+            margin-left: 20px;
+        }
+
+        .header-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 10px;
+            padding-right: 20px;
+        }
+
+        .header-right img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .header-right a {
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .header-right a:hover {
+            color: #007BFF;
+        }
+
+        .calendar {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+            background-color: #f4f4f4;
+            border: 1px solid #dcdcdc;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .month {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border-radius: 8px 8px 0 0;
+            font-size: 14px;
+        }
+
+        .month ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .month ul li {
+            display: inline-block;
+            padding: 0 5px;
+        }
+
+        .month .prev,
+        .month .next {
+            cursor: pointer;
+        }
+
+        .weekdays {
+            margin: 0;
+            padding: 8px 0;
+            background-color: #ddd;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            font-size: 12px;
+        }
+
+        .weekdays li {
+            display: inline-block;
+            width: 13.6%;
+            color: #666;
+        }
+
+        .days {
+            margin: 0;
+            padding: 5px 0;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .days li {
+            list-style-type: none;
+            display: inline-block;
+            width: 13.6%;
+            padding: 5px;
+            margin-bottom: 5px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        .days li:hover {
+            background-color: #ddd;
+            cursor: pointer;
+        }
+
+        .days li.active {
+            background-color: #333;
+            color: white;
+            border-radius: 50%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<table width="1328" border="0" align="center">
+        <tr>
+            <td width="1322" height="578" colspan="3" valign="top"><img src="img/Welcome.gif" width="1325" height="576" alt=""/></td>
+        </tr>
+  <tr>
+            <td colspan="3">
+                <table width="1319" border="0" align="center">
+                    <tr>
+                        <td width="251"><a href="index.html"><img src="img/หน้าแรก.gif" width="250" height="135" alt=""/></a></td>
+                        <td width="265" align="center"><a href="2.html"><img src="img/ประวัติความเป็นมา.gif" width="250" height="135" alt=""/></a></td>
+                        <td width="271" align="center"><a href="3.html"><img src="img/สถานที่ท่องเที่ยว.gif" width="250" height="135" alt=""/></a></td>
+                        <td width="259"><a href="4.html"><img src="img/ร้านอาหาร.gif" width="250" height="135" alt=""/></a></td>
+                        <td width="251"><a href="https://www.rmutp.ac.th/"><img src="img/ปุ่มมทร.gif" width="250" height="135" alt=""/></a></td>
+                    </tr>
+                </table>
+            </td>
+    </tr>
+        <tr>
+            <td colspan="3" align="center" valign="top">
+              <div class="main-content">
+                    <div class="left-content">
+                      <p>&nbsp;</p>
+                      <table width="1210" border="0">
+                        <tbody>
+                          <tr>
+                            <td width="1204" align="center"><img src="img/น้ำตกสาริกา1.jpg" width="848" height="477" alt=""/></td>
+                          </tr>
+                          <tr>
+                            <td height="56" style="font-size: 24px"><p> น้ำตกสาริกา เป็นน้ำตกที่ตั้งอยู่ในเขต อุทยานแห่งชาติเขาใหญ่ ตำบลสาริกา จังหวัดนครนายก โดยน้ำตกของที่นี่นั้น จะมีขนาดใหญ่ไหลตกจากหน้าผาสูง รวมทั้งหมด 9 ชั้นด้วยกัน ซึ่งผาที่สูงที่สุดนั้น จะสูงกว่า 200 เมตรเลย ในแต่ละชั้นก็จะมีหินธรรมชาติ และมีแอ่งน้ำขนาดเล็กๆ อยู่ทั่วบริเวณเลย ส่วนบริเวณใกล้น้ำตก ก็จะมี <strong>ถ้ำสาริกา</strong> เป็นสถานที่ที่ อาจารย์มั่น ภูริฑตฺโต เคยมานั่งบำเพ็ญธรรมนั่นเอง และบริเวณทางขึ้นของ น้ำตกสาริกา จะมีศาล <strong>เจ้าพ่อปลัดจ่าง</strong> และ <strong>เจ้าแม่สาริกา</strong> เป็นสิ่งศักดิ์สิทธิ์ที่ชาวนครนายกและคนทั่วไปให้ความเคารพนับถือกันเป็นอย่างมากอีกด้วย โดยทุกครั้งก่อนเดินทางขึ้น ไปยังตัวน้ำตก แนะนำให้กราบไหว้เพื่อเป็นสิริมงคล</p></td>
+                          </tr>
+                          <tr>
+                            <td align="center"><img src="img/น้ำตกสาริกา2.jpg" width="848" height="565" alt=""/></td>
+                          </tr>
+                          <tr>
+                            <td align="left"><p>ใครที่อยากจะนั่งชิลใกล้ๆ น้ำตก ก็สามารถสั่งของกินทางด้านนอกทางเข้าน้ำตกมาได้ค่ะ โดยด้านนอกจะมีร้านอาหารให้เลือก แต่อย่าลืมรักษาความสะอาดกันด้วยนะคะ และต้องนั่งทางในบริเวณที่จัดไว้เท่านั้น ไม่ไปทานในน้ำตกนะคะ น้ำตกจะได้ใสสะอาดอยู่คู่กับธรรมชาติแบบนี้ไปนานๆ เลย นอกจากนั้นก็ยังสามารถเช่าห่วงยางมานอนลอยเล่นไปมาได้อีกด้วย</p></td>
+                          </tr>
+                          <tr>
+                            <td align="center"><p><img src="img/น้ำตกสาริกา3.jpg" width="848" height="565" alt=""/></p></td>
+                          </tr>
+                          <tr>
+                            <td align="left">ถ้ามาจากรุงเทพฯ สามารถใช้ถนนทางหลวงหมายเลข 1 ( พหลโยธิน ) ตรงมาทางจังหวัดสระบุรี จากนั้นให้เข้าเลนซ้ายเพื่อไปนครนายก แล้วให้เข้าสู่ถนนหมายเลข 33 เพื่อมุ่งหน้าไปจังหวัดนครนายกอีกทีค่ะ พอลงจากสะพานแล้วก็ให้ขับไปจนถึงตัวเมืองนครนายก จะสังเกตเห็นป้ายบอกทางไป น้ำตกสาริกา น้ำตกนางรอง ก็ให้ขับไปตามถนนหมายเลข 3049 เลย ขับไปประมาณ 14 กิโลเมตร ก็จะถึง น้ำตกสาริกา</td>
+                          </tr>
+                          <tr>
+                            <td align="left"><ul>
+                              <li>ที่อยู่ : ตำบลสาริกา อำเภอเมือง จังหวัดนครนายก</li>
+                              <li>พิกัด : <a href="https://goo.gl/maps/XA4toULcejzDoeiu8" target="_blank" rel="noopener">https://goo.gl/maps/XA4toULcejzDoeiu8</a> </li>
+                              <li>เปิดให้เข้าชม : 08.00-17.00 น.</li>
+                              <li>ค่าเข้าชม : คนไทย ผู้ใหญ่ 40 บาท เด็ก 20 บาท , ต่างชาติ ผู้ใหญ่ 200 บาท เด็ก 100 บาท</li>
+                              <li>โทร : 0-3731-9002</li>
+                            </ul>                              <p>&nbsp;</p></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p>&nbsp;</p>
+                      <p>&nbsp;</p>
+                    </div>
+                    <div class="right-content"></div>
+            </div></td>
+        </tr>
+    </table>
+
+<footer>
+  <p>กฤษณพงศ์ พูลสง่า เลขที่21</p>
+</footer>
+
+    <script>
+        let today = new Date();
+        let currentMonth = today.getMonth();
+        let currentYear = today.getFullYear();
+        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        function showCalendar(month, year) {
+            let firstDay = (new Date(year, month)).getDay() - 1;
+            let daysInMonth = 32 - new Date(year, month, 32).getDate();
+            let days = document.getElementById("days");
+            let monthYear = document.getElementById("month-year");
+
+            days.innerHTML = "";
+            monthYear.innerHTML = monthNames[month] + " " + year;
+
+            for (let i = 0; i < firstDay; i++) {
+                days.innerHTML += "<li></li>";
+            }
+
+            for (let i = 1; i <= daysInMonth; i++) {
+                if (i === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
+                    days.innerHTML += `<li class='active'>${i}</li>`;
+                } else {
+                    days.innerHTML += `<li>${i}</li>`;
+                }
+            }
+        }
+
+        function changeMonth(delta) {
+            currentMonth += delta;
+            if (currentMonth < 0) {
+                currentMonth = 11;
+                currentYear--;
+            } else if (currentMonth > 11) {
+                currentMonth = 0;
+                currentYear++;
+            }
+            showCalendar(currentMonth, currentYear);
+        }
+
+        showCalendar(currentMonth, currentYear);
+
+        function updateVisitorCount() {
+            let count = localStorage.getItem('visitor-count');
+            if (!count) {
+                count = 0;
+            }
+            count = parseInt(count) + 1;
+            localStorage.setItem('visitor-count', count);
+            document.getElementById('visitor-count').textContent = count;
+        }
+
+        updateVisitorCount();
+
+        function toggleCalendar() {
+            const calendarContainer = document.getElementById('calendar-container');
+            if (calendarContainer.style.display === 'none') {
+                calendarContainer.style.display = 'block';
+            } else {
+                calendarContainer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

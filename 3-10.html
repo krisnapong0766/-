@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เขาหล่น</title>
+    <style>
+        body {
+    background-color: #FAF3E0;
+    /* หรือใช้ #FFFDD0 */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Angsana New;
+}
+
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            background: none;
+            border-radius: 0;
+        }
+
+        .main-content {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	font-size: 24px;
+        }
+
+        .right-content {
+            margin-left: 20px;
+        }
+
+        .header-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 10px;
+            padding-right: 20px;
+        }
+
+        .header-right img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .header-right a {
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .header-right a:hover {
+            color: #007BFF;
+        }
+
+        .calendar {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+            background-color: #f4f4f4;
+            border: 1px solid #dcdcdc;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .month {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border-radius: 8px 8px 0 0;
+            font-size: 14px;
+        }
+
+        .month ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .month ul li {
+            display: inline-block;
+            padding: 0 5px;
+        }
+
+        .month .prev,
+        .month .next {
+            cursor: pointer;
+        }
+
+        .weekdays {
+            margin: 0;
+            padding: 8px 0;
+            background-color: #ddd;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            font-size: 12px;
+        }
+
+        .weekdays li {
+            display: inline-block;
+            width: 13.6%;
+            color: #666;
+        }
+
+        .days {
+            margin: 0;
+            padding: 5px 0;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .days li {
+            list-style-type: none;
+            display: inline-block;
+            width: 13.6%;
+            padding: 5px;
+            margin-bottom: 5px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        .days li:hover {
+            background-color: #ddd;
+            cursor: pointer;
+        }
+
+        .days li.active {
+            background-color: #333;
+            color: white;
+            border-radius: 50%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<table width="1328" border="0" align="center">
+        <tr>
+            <td width="1322" height="578" colspan="3" valign="top"><img src="img/Welcome.gif" width="1325" height="576" alt=""/></td>
+        </tr>
+  <tr>
+            <td colspan="3">
+                <table width="1319" border="0" align="center">
+                    <tr>
+                        <td width="251"><a href="index.html"><img src="img/หน้าแรก.gif" width="250" height="135" alt=""/></a></td>
+                        <td width="265" align="center"><a href="2.html"><img src="img/ประวัติความเป็นมา.gif" width="250" height="135" alt=""/></a></td>
+                        <td width="271" align="center"><a href="3.html"><img src="img/สถานที่ท่องเที่ยว.gif" width="250" height="135" alt=""/></a></td>
+                        <td width="259"><a href="4.html"><img src="img/ร้านอาหาร.gif" width="250" height="135" alt=""/></a></td>
+                        <td width="251"><a href="https://www.rmutp.ac.th/"><img src="img/ปุ่มมทร.gif" width="250" height="135" alt=""/></a></td>
+                    </tr>
+                </table>
+            </td>
+    </tr>
+        <tr>
+            <td colspan="3" align="center" valign="top">
+              <div class="main-content">
+                    <div class="left-content">
+                      <p>&nbsp;</p>
+                      <table width="1210" border="0">
+                        <tbody>
+                          <tr>
+                            <td width="1204" align="center"><img src="img/เขาหล่นผจญภัย-นครนายก-โลเคชั่นธรรมชาติถ่ายรูปสุดชิค-01.jpg" width="732" height="484" alt=""/></td>
+                          </tr>
+                          <tr>
+                            <td height="56" style="font-size: 24px">เขาหล่น ตั้งอยู่ที่ ต.สาริกา อ.เมือง จ.นครนายก ที่นี่เป็นเหมือนศูนย์รวมกิจกรรมแอดเวนเจอร์ ที่มีทั้งปีนผา โรยตัว ขับรถเอทีวี ปั่นจักรยาน ด้วยสภาพของพื้นที่โดยรอบเป็นป่าและภูเขา ทำให้เขาหล่นมีภูมิทัศน์ที่สวยงามและเหมาะกับการเล่นกิจกรรมสนุกๆ ไม่เพียงแต่มีกิจกรรมสำหรับสายแอดเวนเจอร์เท่านั้น สายชิลล์ก็สามารถเดินเล่นชมวิวธรรมชาติสวยๆ ได้ที่จุดชมวิวจะมีสะพานไม้ไผ่ให้เดินเลียบไปตามภูเขา มองเห็นทุ่งหญ้าและทิวเขาสวยงาม ถ้ามาตอนเย็นๆ ช่วงพระอาทิตย์ตกดิน บอกเลยว่าบรรยากาศดีมาก อากาศไม่ร้อนเดินชิลล์ๆ ได้เลย</td>
+                          </tr>
+                          <tr>
+                            <td align="center"><img src="img/Khaolon-22.jpg" width="732" height="484" alt=""/></td>
+                          </tr>
+                          <tr>
+                            <td align="left"><p><strong>สำหรับการเดินทาง</strong>ไปยังเขาหล่นให้ขับรถมายังเส้นทาง<strong>ถนนสายหลัก 305</strong> จะผ่าน<strong>อุทยานพระพิฆเนศ</strong> ก็จะมาถึงทางเลี้ยวเข้าเขาหล่นผจญภัย ขับรถไปจนสุดทางก็จะพบกับจุดชมวิวเขาหล่น ด้านหน้ามีหอคอย และผาหินขนาดใหญ่อยู่เขาหล่นผจญภัย นั้นตั้งอยู่ในตัวเมืองนครนายก ไม่ไกลจากอุทยานพระพิฆเนศและวัดหลวงพ่อปากแดง ทำให้การเดินทางไปสะดวกมากๆ สำหรับช่วงวันหยุดนี้ใครยังไม่รู้ว่าจะไปเที่ยวเล่นที่ไหนดี ขอแนะนำที่เขาหล่นผจญภัย นครนายกเลย~</p>
+                              <ul>
+                                <li dir="auto"><strong>Location:</strong> ต.สาริกา อ.เมืองนครนายก จ.นครนายก</li>
+                                <li dir="auto"><strong>Google Map:</strong><a href="https://maps.app.goo.gl/fn7DqimKeBZaVB2t7" target="_blank" rel="noopener"> https://maps.app.goo.gl/fn7DqimKeBZaVB2t7</a></li>
+                                <li dir="auto"><strong>Open-Close:</strong> เปิดทุกวันเวลา 08.00 – 18.00 น.                            </li>
+                            </ul></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p>&nbsp;</p>
+                      <p>&nbsp;</p>
+                    </div>
+                    <div class="right-content"></div>
+            </div></td>
+        </tr>
+    </table>
+
+<footer>
+  <p>กฤษณพงศ์ พูลสง่า เลขที่21</p>
+</footer>
+</body>
+</html>
